@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO  -->
+    <meta name="keywords" 
+         content="freefood, freeclothes, freedress, getshare, getfree, withoutmoney, nomoney, donatepoor, wastethings, donateall, blooddonation ">
+    <!-- boostrap 5 css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <title>Share Get</title>
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.css">
+    <!-- coustom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="far fa-hand-point-up"></i> </button> -->
+   <!-- nav bar  -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-info">
+    <div class="container-fluid">
+      <a href="after-login.html"> <img style="width: 170px;padding-right: 20px;" src="./assets/images/logo.png" alt="free food"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " >
+      </ul>
+        <div class="d-flex">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " >
+         
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white mt-2 " href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="far fa-user"></i> Profile
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="Profile-page.html"><i class="far fa-user"></i> Edit Profile</a></li>
+                    <li><a class="dropdown-item" href="user-poster-products.html"><i class="fas fa-book-open"></i> posts</a></li>
+                    <li><a class="dropdown-item" href="wish-list.html"><i class="fas fa-bookmark"></i> wish list</a></li>
+                    <li><a class="dropdown-item text-danger fw-bold " href="#"><i class="far fa-times-circle text-danger fw-bold" ></i> Logout</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalcategory" href="#"><i class="fas fa-clipboard-list"></i> Category</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white mt-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-language"></i>  language
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button type="button" class="btn btn-info position-relative">
+                          <i class="far fa-bell text-white"></i>
+                          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            99+
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </button>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li>
+                          <a class="dropdown-item p-3" href="#">Notification 1
+                              <i style="cursor: pointer;" class="fas fa-times text-danger ms-5"></i>
+                          </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item p-3" href="#">Notification 1
+                          <i style="cursor: pointer;" class="fas fa-times text-danger ms-5"></i>
+                      </a>
+                </li>
+                  </ul>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mt-2" href="#"><i class="fas fa-envelope"></i> Chat</a>
+            </li>
+            <li data-bs-toggle="modal" data-bs-target="#exampleModal-post" class="nav-item ">
+              <a class="nav-link text-white mt-2 "  href="#"><i class="fas fa-hand-holding-usd"></i> Donate</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mt-2 "  href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+    <!-- nav bar end -->
+
+
+<!-- Modal  category-->
+<div class="modal fade" id="exampleModalcategory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>tittle</h5>
+        <ul class="list-unstyled">
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+        </ul>
+       </div>
+       <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6  col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+     </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal  category-->
+
+
+<!-- Modal post-->
+<div class="modal fade" id="exampleModal-post" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     
+        <div class="mb-3">
+          <label for="select category">select category</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="select category">select sub category</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="name of the product"> Product description</label>
+          <textarea type="text" class="form-control"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Product image <button class="btn btn-success ms-5" onclick="addimg()">add image</button></label>
+          <div id="alert-msg"></div>
+          <div id="img_append"></div>
+          <input type="file" class="form-control mt-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="hidden" class="form-control" id="rowcount_img" value=1/>
+          
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal post-->
+
+
+  <div class="container-fluid ">
+      <div class="row ">
+          <div class="col-12 text-center">
+     <img src="./assets/images/01Sept_21-SBILife-eShield-DBM-Options_970x250.jpg" class="img-fluid mt-3 mb-5" alt="Free food">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row ">
+  <div class="col-lg-3 col-md-6 col-sm-12 ">
+    <h5 class=" text-center">tittle</h5>
+    <ul class="list-unstyled text-center">
+      <li>names of sub category</li>
+      <li>names of sub category</li>
+      <li>names of sub category</li>
+      <li>names of sub category</li>
+      <li>names of sub category</li>
+      <li>names of sub category</li>
+    </ul>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+     <h5>tittle</h5>
+     <ul class="list-unstyled">
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+     </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+     <h5>tittle</h5>
+     <ul class="list-unstyled">
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+     </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+     <h5>tittle</h5>
+     <ul class="list-unstyled">
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+     </ul>
+    </div>
+    <div class="col-lg-3 col-md-6  col-sm-12 text-center">
+     <h5>tittle</h5>
+     <ul class="list-unstyled">
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+     </ul>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-12 text-center">
+     <h5>tittle</h5>
+     <ul class="list-unstyled">
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+       <li>names of sub category</li>
+     </ul>
+    </div>
+ </div>
+
+
+
+
+
+
+
+<style>
+  .labbel-hidden{
+    background-color:#0275d8;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius:0em 0.3em  0.3rem 0em;
+  cursor: pointer;
+  height: 100%;
+  }
+</style>
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+<footer
+class="text-center text-lg-start text-white mt-5 bg-info"
+>
+
+<div class="container p-4 pb-0">
+
+<section>
+<!--Grid row-->
+<div class="row">
+<!--Grid column-->
+<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">FOOTER CONTENT</h5>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Molestiae modi cum ipsam ad, illo possimus laborum ut
+    reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+    Reiciendis assumenda iusto sapiente inventore animi?
+  </p>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+
+
+<hr class="mb-4" />
+
+<!-- Section: Social media -->
+<section class="mb-4 text-center">
+<!-- Facebook -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-facebook-f"></i
+></a>
+
+<!-- Twitter -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-twitter"></i
+></a>
+
+<!-- Google -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-google"></i
+></a>
+
+<!-- Instagram -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-instagram"></i
+></a>
+
+<!-- Linkedin -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-linkedin-in"></i
+></a>
+
+
+</section>
+<!-- Section: Social media -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div
+class="text-center p-3"
+style="background-color: #63d7ee"
+>
+© 2021 Copyright:
+<a class="text-white text-decoration-none" href="#"
+>Share Get</a
+><br>
+<span>Developed by <a style="color: rgb(1, 1, 63);" class=" text-decoration-none" href="www.venkateshponraj.tech">venkatesh ponraj</a></span>
+</div>
+<!-- Copyright -->
+</footer>
+
+
+    <!-- boostrap 5 js links -->
+    <script src="./assets/bootstrap-5.1.1-dist/js/popper.min.js"></script>
+    <script src="./assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <!-- coustom js  -->
+    <script src="./assets/js/app.js"></script>
+   
+</body>
+</html>

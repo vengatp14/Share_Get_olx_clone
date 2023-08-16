@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO  -->
+    <meta name="keywords" 
+         content="freefood, freeclothes, freedress, getshare, getfree, withoutmoney, nomoney, donatepoor, wastethings, donateall, blooddonation ">
+    <!-- boostrap 5 css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <title>Share Get</title>
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.css">
+    <!-- coustom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+      div.scrollmenu {
+        
+        overflow: auto;
+        white-space: nowrap;
+      }
+      
+      div.scrollmenu a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+      
+      div.scrollmenu a:hover {
+        background-color: skyblue;
+      }
+
+      .main-scroll::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    .main-scroll::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    .main-scroll::-webkit-scrollbar-thumb {
+      background: skyblue; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    .main-scroll::-webkit-scrollbar-thumb:hover {
+      background: rgb(89, 197, 240); 
+    }
+      </style>
+</head>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="far fa-hand-point-up"></i> </button>
+   <!-- nav bar  -->
+   <div class="sticky-top">
+   <nav class="navbar navbar-expand-lg navbar-light bg-info ">
+    <div class="container-fluid">
+      <a href="index.html"> <img style=" width: 170px;padding-right: 20px; " src="./assets/images/logo.png" class="img-fluid" alt="free food"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " >
+      </ul>
+        <div class="d-flex">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " >
+         
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-white mt-2" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-language"></i>  language
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                  </ul>
+                </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModal"  href="#"><i class="fas fa-hand-holding-usd"></i> Donate</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mt-2 " data-bs-toggle="modal" data-bs-target="#exampleModalcategory" href="#"><i class="fas fa-clipboard-list"></i> Category</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-white mt-2 "  href="blog.html"><i class="fas fa-blog"></i> Blog</a>
+            </li>
+            <li>
+            <a href="after-login.html" class="nav-link text-white mt-2">  after login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>
+      
+    </div>
+  </nav>
+      <nav class="d-flex bg-info ">
+        <div class="col-6 p-1 mb-2">
+            <input class="form-control me-2 navbar-brand" type="search" placeholder="Location" aria-label="Search">
+           
+    </div>
+    <div class="col-6 p-1 mb-2">
+        <input class="form-control me-2 navbar-brand" type="search" placeholder="Find food, clothes and more..." aria-label="Search">
+    </div>
+    </nav>
+  </div>
+    <!-- nav bar end -->
+
+
+<!-- Modal  category-->
+<div class="modal fade" id="exampleModalcategory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+     <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>tittle</h5>
+        <ul class="list-unstyled">
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+          <li>names of sub category</li>
+        </ul>
+       </div>
+       <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6  col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+         <h5>tittle</h5>
+         <ul class="list-unstyled">
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+           <li>names of sub category</li>
+         </ul>
+        </div>
+     </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal  category-->
+
+
+
+
+<!-- Modal login $ register-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Login</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Register</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                  
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1"  class="form-label">Email address or Mobile number</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" value="" id="check" class="form-check-input" >
+                          <label class="form-check-label" for="exampleCheck1"><a class="text-decoration-none" href="#">Terms & condition</a></label>
+                          <div id="check-al"></div>
+                        </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                  
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">User Name</label>
+                          <input type="email" class="form-control" id="User-Id" aria-describedby="emailHelp">
+                          <div id="User-Id-al"></div>
+                          </div>
+                          <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Mobile number </label>
+                          <input type="email" class="form-control" id="phone-Number" aria-describedby="emailHelp">
+                          <div id="phone-number-al"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="G-Mail">Email address</label>
+                            <input class="form-control" id="E-mail" type="mail" >
+                            <div id="E-mail-al"></div>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between">
+                         <div>
+                          <label class="form-label" for="otp">otp</label>
+                          <input class="form-control" id="otp" type="mail" >
+                          <div id="otp-al"></div>
+                         </div>
+                         <div style="margin-top: 10px;">
+                           <button class="btn btn-success mt-4">Get otp</button>
+                         </div>
+                      </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="G-Mail">Password</label>
+                            <input class="form-control" id="Password" type="mail" >
+                            <div id="Password-al"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="G-Mail">Re-enter Password</label>
+                            <input class="form-control" id="Confirm-Password" type="mail" >
+                            <div id="Confirm-Password-al"></div>
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" value="" id="check" class="form-check-input" >
+                          <label class="form-check-label" for="exampleCheck1"><a class="text-decoration-none" href="#">Terms & condition</a></label>
+                          <div id="check-al"></div>
+                        </div>
+                        </div>
+                      
+                        <button type="submit" onclick="validationform()" class="btn btn-primary">Submit</button>
+                     
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal login & register-->
+
+
+<div class="d-flex justify-content-between">
+  <h2 class="mt-2 mb-2">category</h2>
+  <a href="category-list.html" class="text-decoration-none"><h2 class="mt-2 mb-2  text-info">see all</h2></a>
+</div>
+
+<div class="scrollmenu border border-info main-scroll">
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+  <a class="text-black" href="#"><img src="./assets/images/logo.png" height="40px" alt=""> <br>home</a>
+ 
+</div>
+
+  <div class="container-fluid ">
+      <div class="row ">
+          <div class="col-12 text-center">
+     <img src="./assets/images/01Sept_21-SBILife-eShield-DBM-Options_970x250.jpg" class="img-fluid mt-3 " alt="Free food">
+<h1 class="mt-2 mb-4">Fresh recommendations</h1>
+</div>
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="./assets/images/download.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="./assets/images/download1.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0 " data-mdb-ripple-color="light">
+      <img class="img-size" src="./assets/images/download2.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="./assets/images/download3.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="./assets/images/download4.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="./assets/images/download5.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="./assets/images/01Sept_21-SBILife-eShield-DBM-Options_970x250.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+<!-- card  -->
+<div class="col-lg-3 col-6 sm-6 col-md-4 ">
+  <div class="card img-hover mt-2 mt-4">
+    <div class="card-body d-flex flex-row">
+      <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-8.jpg" class="rounded-circle me-3 img-all" height="50px"
+        width="50px" alt="Free food" />
+      <div>
+        <h5 class="card-title font-weight-bold mb-2 font-size">New spicy meals</h5>
+        <p class="card-text font-size"><i class="far fa-clock pe-2 font-size font-size"></i>07/24/2018</p>
+      </div>
+    </div>
+    <div class="bg-image hover-overlay ripple rounded-0" data-mdb-ripple-color="light">
+      <img class="img-size" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/full page/2.jpg"
+        alt="Free foodmage cap" />
+      <a href="#">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <p class="card-text" >
+        Recently 
+      </p>
+      <div class="d-flex justify-content-between">
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="display: none;">
+    <input  type="text" value="www.venkateshponraj.tech" id="myInput">
+  </div>
+</div>
+<!-- card  -->
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+<nav aria-label="Page navigation example " class="mt-5" >
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1" >Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+<footer
+class="text-center text-lg-start text-white mt-5 bg-info"
+>
+
+<div class="container p-4 pb-0">
+
+<section>
+<!--Grid row-->
+<div class="row">
+<!--Grid column-->
+<div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">FOOTER CONTENT</h5>
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Molestiae modi cum ipsam ad, illo possimus laborum ut
+    reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+    Reiciendis assumenda iusto sapiente inventore animi?
+  </p>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+
+<!--Grid column-->
+<div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+  <h5 class="text-uppercase">Links</h5>
+
+  <ul class="list-unstyled mb-0">
+    <li>
+      <a href="#" class="text-white">Link 1</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 2</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 3</a>
+    </li>
+    <li>
+      <a href="#" class="text-white">Link 4</a>
+    </li>
+  </ul>
+</div>
+<!--Grid column-->
+</div>
+<!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="mb-4" />
+
+<!-- Section: CTA -->
+<section class="">
+<p class="d-flex justify-content-center align-items-center">
+<span class="me-3">Register for free</span>
+<button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-outline-light btn-rounded">
+  Sign up!
+</button>
+</p>
+</section>
+<!-- Section: CTA -->
+
+<hr class="mb-4" />
+
+<!-- Section: Social media -->
+<section class="mb-4 text-center">
+<!-- Facebook -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-facebook-f"></i
+></a>
+
+<!-- Twitter -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-twitter"></i
+></a>
+
+<!-- Google -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-google"></i
+></a>
+
+<!-- Instagram -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-instagram"></i
+></a>
+
+<!-- Linkedin -->
+<a
+ class="btn btn-outline-light btn-floating m-1"
+ href="#"
+ role="button"
+ ><i class="fab fa-linkedin-in"></i
+></a>
+
+
+</section>
+<!-- Section: Social media -->
+</div>
+<!-- Grid container -->
+
+<!-- Copyright -->
+<div
+class="text-center p-3"
+style="background-color: #63d7ee"
+>
+© 2021 Copyright:
+<a class="text-white text-decoration-none" href="#"
+>Share Get</a
+>
+<br>
+<span>Developed by <a style="color: rgb(1, 1, 63);" class=" text-decoration-none" href="www.venkateshponraj.tech">venkatesh ponraj</a></span>
+</div>
+<!-- Copyright -->
+</footer>
+
+
+    <!-- boostrap 5 js links -->
+    <script src="./assets/bootstrap-5.1.1-dist/js/popper.min.js"></script>
+    <script src="./assets/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+    <!-- coustom js  -->
+    <script src="./assets/js/app.js"></script>
+   <script>
+            
+function validationform(){
+  var userId = document.getElementById("User-Id").value.trim();
+  var userId_er = document.getElementById("User-Id-al");
+  var phoneNumber = document.getElementById("phone-Number").value.trim();
+  var phonenumberal = document.getElementById("phone-number-al");
+  var Email = document.getElementById("E-mail").value;
+  var Emailal = document.getElementById("E-mail-al");
+  var Password = document.getElementById("Password").value.trim();
+  var Password_er =  document.getElementById("Password-al");
+  var ConfirmPassword = document.getElementById("Confirm-Password").value.trim();
+  var Confirmpasswordal = document.getElementById("Confirm-Password-al");
+  var check = document.getElementById("check");
+  var checkal = document.getElementById("check-al");
+  var otp = document.getElementById("otp");
+  var otpal= document.getElementById("otp-al");
+
+  // alert(userId)
+// user-id
+  if (userId.length <= 6){    
+    userId_er.innerHTML = "Need atleast 6 chracter";
+    userId_er.style.color="red"
+    userId_er.style.fontSize="14px"
+  }
+  else {
+    userId_er.innerHTML = "";
+  }
+
+// otp 
+if (otp.length <= 6){    
+    otpal.innerHTML = "Need atleast 6 chracter";
+    otpal.style.color="red"
+    otpal.style.fontSize="14px"
+  }
+  else {
+    otpal.innerHTML = "";
+  }
+
+
+         //  phoneNumber
+        // alert(phoneNumber.length);
+if (phoneNumber.length != 10 ) {
+      // alert(phoneNumber.length);
+  phonenumberal.innerHTML="number must be in 10 digits";
+  phonenumberal.style.color="red"
+  phonenumberal.style.fontSize="14px"
+
+}
+else{
+ phonenumberal.innerHTML=""
+}
+if (Email.match(/^([a-z0-9]+)@([a-zA-Z]+).([a-z]{2,8})$/)){
+  // alert("if: "+Email);
+  Emailal.innerHTML=""; 
+}
+else{
+  // alert("else"+Email);
+  Emailal.innerHTML="Email is invalid"
+  Emailal.style.color="red"
+  Emailal.style.fontSize="14px"
+}
+ // Password
+ if (Password.length <= 8){
+    Password_er.innerHTML = "Password should be with spl car";
+    Password_er.style.color="red"
+    Password_er.style.fontSize="14px"
+  }
+  else{
+    Password_er.innerHTML = "";
+  }
+  // Password
+  if (!Password.match(/[a-z]/g) || !Password.match( /[A-Z]/g) || !Password.match(/[0-9]/g) || !Password.match(/[^a-zA-Z\d]/g) || !Password.length >= 8 ){
+    Password_er.innerHTML = 'Need atleast one number, special, upper and lower carachter';
+    Password_er.style.color="red"
+    Password_er.style.fontSize="14px"
+  }
+  else{
+    Password_er.innerHTML = "";
+  }
+// ConfirmPassword
+  if (Password != ConfirmPassword) {
+    Confirmpasswordal.innerHTML = "password not matched";
+    Confirmpasswordal.style.color="red"
+    Confirmpasswordal.style.fontSize="14px"
+    
+        }
+        else{
+          Confirmpasswordal.innerHTML="";
+        }
+        // cheakbox
+if (check.checked == false){
+  checkal.innerHTML="check the checkbox"
+  checkal.style.color="red"
+  checkal.style.fontSize="14px"
+}
+else{
+  checkal.innerHTML="";
+}
+}
+
+   </script>
+</body>
+</html>
+
+
+
+<!-- $lang[ 'cancel' ] = 'Cancel';   $lang[ 'cancel' ] = '
+रद्द करना'; -->

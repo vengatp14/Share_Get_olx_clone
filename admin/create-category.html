@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<!-- meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="venkatesh ponraj"> 
+
+    <!-- tittle and logo -->
+    <title>SHare Get</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="./assets/boostrap/bootstrap.min.css">
+  <link href="./assets/boostrap/bootstrap5.min.css" rel="stylesheet">
+
+   <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style3.css">
+
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="./assets/scrollbar/jquery.mCustomScrollbar.min.css">
+
+     <!-- Font Awesome JS -->
+     <link rel="stylesheet" href="./assets/fontawesome-free-5.15.4-web/css/all.css">
+     <script src="./assets/fontawesome-free-5.15.4-web/js/solid.js"></script>
+     <script src="./assets/fontawesome-free-5.15.4-web/js/fontawesome.js" ></script>
+
+    <!-- data table  -->
+    <link rel="stylesheet" href="./assets/datatable/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./assets/datatable/datatable.css">
+    <link rel="stylesheet" href="./assets/datatable/responsive.bootstrap.css">
+ 
+    <!-- css  -->
+    <style>
+        .dataTables_wrapper .dataTables_length select {
+    border: 1px solid #aaa; 
+    border-radius: 3px;
+     padding: 5px;
+    background-color: white;
+    padding: 4px;
+}
+.dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 5px;
+    background-color:white;
+    margin-left: 3px;
+}
+    </style>
+</head>
+
+<body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label class="mt-2" for="user-name">category</label>
+            <input class="form-control" placeholder="English" type="text">
+            <input class="form-control mt-3" placeholder="Hindi" type="text">
+            <label class="mt-2" for="user-name">Sub category <button onclick="category()"  class="btn btn-success ms-5"><i class="fas fa-plus-circle"></i> add</button></label>
+            <div id="alert-msg"></div>
+            <input class="form-control" placeholder="English" type="text">
+            <input class="form-control mt-3" placeholder="Hindi" type="text">
+            <div id="img_append"></div>
+            <input type="hidden" class="form-control" id="rowcount_img" value=1/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="far fa-times-circle"></i> Close</button>
+          <button type="button" class="btn btn-success"><i class="far fa-save"></i> Add data</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" >
+            <div id="dismiss" >
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header">
+                <h3>Test</h3>
+            </div>
+
+           
+            <ul class="list-unstyled components">
+                <p>Share Get</p>
+                <li>
+                  <a href="admin-profile.html"><i class="fas fa-user-alt"></i> My Profile </a>
+              </li>
+                <li>
+                    <a href="index.html" data-toggle="collapse" aria-expanded="false"><i class="fas fa-house-user"></i> Home</a>    
+                </li>
+          
+                <li>
+                    <a href="table.html"><i class="fas fa-clipboard-list"></i> user list</a>
+                </li>
+                <li>
+                  <a href="clint-msg.html"><i class="fas fa-comments"></i> Clint msg</a>
+              </li>
+              <li class="side-nav-active">
+                <a href="create-category.html"><i class="fas fa-folder-plus"></i> Create category</a>
+            </li>
+            <li>
+                <a href="deleted-report.html"> <i class="fas fa-trash"></i> deleted report</a>
+            </li>
+            <li>
+                <a href="total-no-product.html"><i class="fas fa-th-list"></i> No of post live</a>
+            </li>
+            <li>
+                <a href="reported-items.html"><i class="fas fa-th-list"></i><i class="fas fa-bug"></i> reported items list</a>
+            </li>
+            <li>
+                <a href="reported-user.html"><i class="fas fa-user-alt"></i><i class="fas fa-bug"></i> reported user list</a>
+            </li>
+            <li>
+                <a href="blog.html"><i class="fas fa-blog"></i> blog</a>
+              </li>
+            <li>
+                <a href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
+              </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg text-light nav-shadow sticky-top media-nav">
+                <div class="container-fluid">
+                  <h4 style="cursor: pointer;" class="navbar-brand" id="sidebarCollapse" ><i class="fas fa-bars fa-1x mx-3"></i></h4>
+                 
+                </div>
+              </nav>
+            <div class="container-fluid">
+                <div class="row">
+
+
+<!-- data category -->
+<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+<ul type="none">
+    <li>
+        <h4>category </h4>
+    </li>
+    <li>
+        sub category
+    </li>
+    <li>
+        sub category
+    </li>
+    <li>
+        sub category
+    </li>
+    <li>
+        sub category
+    </li>
+    <li>
+        sub category
+    </li>
+    <li>
+        sub category
+    </li>
+    <li> <a href="edit-category.html"><button class="btn btn-success">Edit <i class="far fa-edit"></i></button></a> <button class="btn btn-danger">delete <i class="far fa-trash-alt"></i></button></li>
+</ul>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 text-center">
+    <ul type="none">
+        <li>
+            <h4>category </h4>
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li> <a href="edit-category.html"><button class="btn btn-success" >Edit <i class="far fa-edit"></i></button></a> <button class="btn btn-danger">delete <i class="far fa-trash-alt"></i></button></li>
+    </ul>
+    </div>
+<div class="col-lg-4 col-md-6 col-sm-12 text-center">
+    <ul type="none">
+        <li>
+            <h4>category </h4>
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li>
+            sub category
+        </li>
+        <li> <a href="edit-category.html"><button class="btn btn-success">Edit <i class="far fa-edit"></i></button></a> <button class="btn btn-danger">delete <i class="far fa-trash-alt"></i></button></li>
+    </ul>
+    </div>
+ 
+            <div class="col-12 text-center mt-5">
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="far fa-plus-square"></i> Add new category</button>
+            </div>
+<!-- data category -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="overlay"></div>
+
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+     <script src="./assets/jquery/jquery-3.3.1.slim.min.js"></script>
+
+     <!-- Popper.JS -->
+     <script src="./assets/boostrap/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/boostrap/js/popper.min.js"></script>
+    <script src="./assets/boostrap/js/bootstrap.min.js"></script>
+
+    <!-- data table   -->
+    <script src="./assets/js/jquery-3.5.1.js"></script>
+    <script src="./assets/js/jquery.dataTables.min.js"></script>
+    <script src="./assets/datatable/dataTables.responsive.js"></script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="./assets/jquery/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- costom js  -->
+   
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+        
+
+// data table 
+        var dtable = null;
+  $(document).ready(function () {
+        dtable =$('#example').DataTable({
+            "searching": true,
+            "paging": true,
+            "pageLength": 5,
+            "lengthMenu": [5, 10, 15, 25],
+            "order": [[1, "desc"]],
+            "ordering": true,
+            "scrollX": true
+        });
+        
+    });
+
+
+    // add category 
+  function category()
+  {
+    const rowcount=parseInt(document.getElementById('rowcount_img').value.trim())
+    // alert(rowcount)
+    if (rowcount<30)
+    {
+      // alert(rowcount)
+      $('#img_append').append(' <label class="mt-2" for="user-name">Sub category </label> <input class="form-control mt-3" placeholder="English" type="text"><input class="form-control mt-3" placeholder="Hindi" type="text">')
+      document.getElementById('rowcount_img').value=rowcount+1
+    }
+    else
+    {
+      $('#alert-msg').html('<div class="text-danger">you cannot add more than 30 sub-category </div>')
+    }
+    
+  }
+    
+    </script>
+</body>
+
+</html>
